@@ -12,6 +12,8 @@ class RockPaperScissors():
             return 'paper'
         elif rps.upper() == 'S':
             return 'scissors'
+        elif rps.lower() == 'quit':
+            return 'quit'
         else:
             print("Invalid choice. Please try again.")
             return self.user_input()
