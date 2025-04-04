@@ -1,4 +1,4 @@
-import random
+import secrets
 
 class RockPaperScissors():
     def __init__(self):
@@ -27,7 +27,7 @@ class RockPaperScissors():
             return self.user_input()
 
     def comp_turn(self):
-        return random.choice(self.choices)
+        return secrets.choice(self.choices)
 
     def determine_winner(self, user_choice, comp_choice):
         if user_choice == comp_choice:
